@@ -1,14 +1,38 @@
-.wrapper {
-  width: 100%;
-  height: 100%;
-}
+// .wrapper {
+//   width: 100%;
+//   height: 100%;
+// }
 
 .image-fullscreen {
-  width: 100%;
+  height: 90vh;
   // height: 100%;
+  margin-right: 3rem;
   img {
-    width: 100%;
+    height: 100%;
   }
+}
+
+.text-scroll {
+  // they collapse the div. why?
+  // overflow: hidden;
+   // overflow-y:auto;
+  box-shadow: 0px 0px 38px 10px rgba(0,0,0,0.04);
+  border-radius: 1px;
+  width: auto;
+  margin: auto 3rem;
+  padding: 40px;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.text-scroll p {
+  height: 100%;
+  // overflow:scroll;
+  margin: 0;
+}
+
+.scroll {
+  overflow-y: scroll;
 }
 
 nav {
@@ -20,8 +44,14 @@ nav {
   padding: 0.5rem 0;
 }
 
+// .container {
+//   padding: 0 0.2rem;
+// }
+
 .container {
-  padding: 0 0.2rem;
+  display: flex;
+  // !!! This keeps the navbar from overflowing !!!
+  overflow: auto;
 }
 
 .nav-flex {
